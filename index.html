@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>103 Assignment1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mystyle.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+	<title>Store Receipt</title>
+	
 </head>
 <body>
-    <h1>103 Assignment 1</h1>
-    <h2>How is my JS?</h2>
+	<header>
+      	<h1><span>I Can Draw Stuff Ink</span></h1>
+	</header>
+	<main>
+	<div class="center">
+		<h2><span>Store Receipt!</span></h2>
+	</div>
+	<div class="center">
 
-    <script src="script12.js"></script>
+		<button onclick="subtotal()">Calculate Subtotal</button>
+		<!-- if you wanted to create array and choose how many of each product you wanted -->
+		<!-- <button onclick="subtotalMultiple()">Calculate subtotal</button> -->
+		<div id="receipt">
+	
+		</div>
+		
+		<!-- area for the taxTotal to populate HTML Block -->
+		<div id="taxTotal">
+		</div>
+	</div>
+	
+		<script src="receiptA2.js"></script>
+	</main>
+</div>
 </body>
 </html>
