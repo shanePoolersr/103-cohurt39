@@ -3,42 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/mystyle.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="mystyle.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <title>Calculator</title>
+    <title>Todo list Application</title>
 </head>
 <body>
-    
-        <header>
-        <h1>This is my calculator</h1>
-        </header>
+    <header>
+        <!--input, button--->
+        <input type="text" id="txtTask">
+        <button onclick="registerTask()">Add</button>
+    </header>
     <main>
-        <p class="center">Instructions</p>
-        
-        <ol class="center">
-            <li>Click on the button to start</li>
-            <li>Add the number into the prompts.</li>
-            <li>The results of the four operators will be displayed ( + - * /)</li>
-        </ol>
-        <div class="center">
-            <button onclick="calculate()">Start</button> 
-        </div>
-        <h2 class="center blue">Results </h2>
-<div id ="results"></div>
-<div id ="resultsList"></div>
+        <h2>Tasks List</h2>
+        <p>Total of tasks: <span></span></p>
+        <ul id="tasklist">
+            <!-- display the tasks here-->
+        </ul>
     </main>
-    <footer>
-        <p>All the copyrights reserved &copy; 2023 Shane Pooler</p>
-    </footer>
-    <script src="calculator.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
